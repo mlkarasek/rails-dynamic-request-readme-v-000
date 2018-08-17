@@ -7,20 +7,7 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'capybara/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
-# spec/features/post_spec.rb
 
-require 'rails_helper'
-
-describe 'navigate' do
-  before do
-    @post = Post.create(title: "My Post", description: "My post desc")
-  end
-
-  it 'loads the show page' do
-    visit "/posts/#{@post.id}"
-    expect(page.status_code).to eq(200)
-  end
-end
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
